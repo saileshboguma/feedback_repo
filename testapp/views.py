@@ -13,7 +13,7 @@ def feedbackview(request):
     if request.method=='POST':
         form=forms.FeedBackForm(request.POST)
         if form.is_valid():
-            print('Form Validation Success and Printing feedback Information: dfdf')
+            print('Form Validation Success and displaying  feedback Information:')
             print('Student Name:',form.cleaned_data['name'])
             print('Student RollNo:',form.cleaned_data['rollno'])
             print('Student Mail Id:',form.cleaned_data['email'])
